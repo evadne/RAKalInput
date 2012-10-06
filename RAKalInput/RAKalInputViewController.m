@@ -28,8 +28,10 @@
 	[self.view addSubview:kalVC.view];
 	[kalVC.view sizeToFit];
 	
+	self.view.autoresizingMask = UIViewAutoresizingNone;
 	self.view.frame = kalVC.view.bounds;
 	self.view.clipsToBounds = YES;
+	
 	kalVC.view.frame = self.view.bounds;
 
 }
