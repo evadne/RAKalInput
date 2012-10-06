@@ -97,6 +97,12 @@
 				self.view.frame = toFrame;
 				[self.view.superview layoutSubviews];
 				
+				self.view.frame = CGRectOffset(
+					toFrame,
+					0,
+					CGRectGetHeight(self.view.superview.bounds) - CGRectGetHeight(toFrame)
+				);
+				
 			} completion:^(BOOL finished) {
 				
 			}];
