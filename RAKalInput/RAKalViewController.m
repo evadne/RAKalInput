@@ -44,8 +44,6 @@
 	
 	[self.view sizeToFit];
 
-	NSLog(@"%s: %@, selected %@, highlighted %@", __PRETTY_FUNCTION__, date, self.view.gridView.selectedTile, self.view.gridView.highlightedTile);
-
 	[self.delegate kalViewController:self didSelectDate:[date NSDate]];		
 
 }
